@@ -1,0 +1,63 @@
+{% include 'elements/header.twig' %}
+<div class="row bg-custom text-center shadow-sm" style="border-radius: 0 0 20px 20px">
+    <div class="col py-5">
+        <h1 class="h3">Google Drive Bypass Engine</h1>
+        <p>Instantly generate clean direct streaming and download link fields to bypass Google Drive quota limit errors.</p>
+    </div>
+</div>
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-between my-4 shadow-sm p-4" style="border-radius: 8px; border-left: 5px solid #d9276f;">
+	<div class="mb-3 mb-md-0 text-center text-md-left">
+		<h2 class="h5 font-weight-bold mb-1">
+			<i class="fas fa-fire text-danger mr-2"></i>Tired of Copying &amp; Pasting Manually?
+		</h2>
+		<p class="text-muted small mb-0">
+			Automate your entire streaming network! Purchase the premium source code license to process
+			unlimited links on your own server stacks natively.
+		</p>
+	</div>
+	<div>
+		<a href="{{ base_url }}buy/" class="btn font-weight-bold px-4 py-2 text-white btn-custom" style="border-radius: 50px">
+			<i class="fas fa-shopping-cart mr-2"></i>Get Source Code
+		</a>
+	</div>
+</div>
+{% if disable_banner_ads != 1 and sh_banner_top is not empty %}
+	<div class="row my-4">
+		<div class="col-12">{{ sh_banner_top }}</div>
+	</div>
+{% endif %}
+<div class="row my-4">
+	<div class="col-12 col-md-6">
+		<div class="card shadow-sm mb-3">
+			<div class="h5 card-header">
+				<i class="fas fa-sliders-h mr-2 text-primary"></i> Configuration
+			</div>
+			<div class="card-body">
+				{% if templates.gdrive_bypass_form %}
+					{% include templates.gdrive_bypass_form %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	<div class="col-12 col-md-6">
+		<div class="card shadow-sm">
+			<div class="h5 card-header">
+				<i class="fas fa-download mr-2 text-success"></i> Direct Output Link
+			</div>
+			<div class="card-body">
+				{% if templates.gdrive_bypass_result %}
+					{% include templates.gdrive_bypass_result %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+{% if disable_banner_ads != 1 and sh_banner_bottom is not empty %}
+	<div class="row my-4">
+		<div class="col-12 mt-3">{{ sh_banner_bottom }}</div>
+	</div>
+{% endif %}
+{% if templates.popupads %}
+	{% include templates.popupads %}
+{% endif %}
+{% include 'elements/footer.twig' %}
