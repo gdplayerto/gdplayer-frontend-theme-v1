@@ -14,7 +14,6 @@
 
 declare(strict_types=1);
 
-use GDPlayer\Config\App;
 use GDPlayer\Presentation\HTML;
 use GDPlayer\Presentation\Views;
 
