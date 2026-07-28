@@ -16,6 +16,32 @@
                     <div class="card-body">
                         <ul class="list-unstyled mb-0">
                             <li class="mb-3">
+                                <strong>Jul 28, 2026 (v4.8.2)</strong>
+                                <ul>
+                                    <li>
+                                        <span class="text-bold text-success">Added</span> Custom Headers management UI in Admin Settings page and navigation bar.
+                                    </li>
+                                    <li>
+                                        <span class="text-bold text-success">Added</span> INSTALLATION.md documentation guide with detailed setup and deployment instructions.
+                                    </li>
+                                    <li>
+                                        <span class="text-bold text-success">Improved</span> Background Process Service: Refactored Background.php process runner and background task execution on Linux environments.
+                                    </li>
+                                    <li>
+                                        <span class="text-bold text-success">Improved</span> Code Quality: Resolved PHPStan Level 8 static analysis compliance and type checks across core handlers.
+                                    </li>
+                                    <li>
+                                        <span class="text-bold text-success">Improved</span> Server Configurations: Updated Nginx (nginx.conf.twig, nginx.conf.example) and Apache (.htaccess.twig) templates, disabling CORS policy headers by default.
+                                    </li>
+                                    <li>
+                                        <span class="text-bold text-primary">Fixed</span> Core &amp; Hosting Parsers: Improved XVFSParser, StreamParser, Core, HeadlessChrome, and Security class handlers.
+                                    </li>
+                                    <li>
+                                        <span class="text-bold text-primary">Fixed</span> Sitemap &amp; Database Migration: Updated sitemap.php views and web-migrate.php script handling.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mb-3">
                                 <strong>Jul 26, 2026 (v4.8.1)</strong>
                                 <ul>
                                     <li>
@@ -34,7 +60,7 @@
                                         <span class="text-bold text-success">Improved</span> Performance: Optimized subtitle and poster cache delivery via direct static redirection to reduce CPU load.
                                     </li>
                                     <li>
-                                        <span class="text-bold text-success">Improved</span> Theme &amp; UI Assets: Restructured assets to `themes/` directory with dynamic symlink generation, upgraded Font Awesome to 7.3.0, and refactored dashboard colors using CSS variables.
+                                        <span class="text-bold text-success">Improved</span> Theme &amp; UI Assets: Restructured assets to themes/ directory with dynamic symlink generation, upgraded Font Awesome to 7.3.0, and refactored dashboard colors using CSS variables.
                                     </li>
                                     <li>
                                         <span class="text-bold text-success">Improved</span> Admin Area: Restructured settings layout (Hosting, Player, Site Settings) and simplified navigation labels.
