@@ -6,7 +6,7 @@
  * File Created: Sunday, 6th August 2023 12:41:20 pm
  * Author: GDPlayer Developer (https://t.me/gdplayerto)
  * -----
- * Last Modified: Monday, 27th July 2026 3:37:19 pm
+ * Last Modified: Tuesday, 28th July 2026 10:10:38 pm
  * Modified By: GDPlayer Developer (https://t.me/gdplayerto>)
  * -----
  * Copyright 2020 - 2025 https://github.com/gdplayerto
@@ -17,7 +17,6 @@ declare(strict_types=1);
 session_write_close();
 
 header('Content-Type: application/xml; charset=UTF-8');
-createResponseHeaders();
 
 $content = <<<'XML'
 <?xml version="1.0" encoding="UTF-8"?>
