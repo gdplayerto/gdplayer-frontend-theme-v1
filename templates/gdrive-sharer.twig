@@ -23,7 +23,7 @@
 </div>
 {% if disable_banner_ads != 1 and sh_banner_top is not empty %}
 	<div class="row my-4">
-		<div class="col-12">{{ sh_banner_top }}</div>
+		<div class="col-12">{{ sh_banner_top|raw }}</div>
 	</div>
 {% endif %}
 <div class="row my-4">
@@ -54,7 +54,7 @@
 </div>
 {% if disable_banner_ads != 1 and sh_banner_bottom is not empty %}
 	<div class="row my-4">
-		<div class="col-12 mt-3">{{ sh_banner_bottom }}</div>
+		<div class="col-12 mt-3">{{ sh_banner_bottom|raw }}</div>
 	</div>
 {% endif %}
 {% if templates.popupads %}
